@@ -1,0 +1,154 @@
+.receipt-router {
+  width: 100%;
+  height: 41px;
+  background-color: #eceef1;
+  border-bottom: 1px solid #d3d4d4;
+  padding: 0 20px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.process,
+.payment {
+  height: 31px;
+  padding: 0 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #111;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+}
+.payment.active,
+.process.active {
+  border: 1px solid #e5d675;
+  border-bottom: 4px solid #2ca01c;
+  font-weight: 700;
+  background-color: #f2ebbf;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.receipt {
+  position: relative;
+}
+.receipt-container {
+  width: 700px;
+  height: 460px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.receipt-container_cash,
+.receipt-container_account {
+  width: 100%;
+  background-color: #fff;
+}
+.receipt-container_account {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.receipt-container_account > div a {
+  height: 70px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0 10px;
+  gap: 5px;
+}
+
+.receipt-container_account > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.account-icon {
+  display: flex;
+  flex-direction: column;
+}
+.receipt-container_account {
+  height: 70px;
+}
+.account-icon .a {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -1378px -257px;
+  width: 21px;
+  height: 22px;
+}
+.receipt-container_cash {
+  width: 100%;
+  height: calc(700px - 70px - 20px);
+  display: flex;
+  flex-direction: column;
+}
+.cash-header {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.cash-header h2 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.cash-router {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 90px;
+  flex: 1;
+}
+.router-left {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-rows: repeat(3, 1fr);
+}
+.router-right {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.fund-inventory,
+.collect-money,
+.pay-money {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* border: 1px solid #888; */
+  transition: all 0.2s;
+}
+.fund-inventory:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.collect-money:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pay-money:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.collect-money-icon > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -352px -1508px;
+  width: 44px;
+  height: 44px;
+}
+.pay-money-icon > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -272px -1508px;
+  width: 49px;
+  height: 45px;
+}
+.fund-inventory-icon > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -32px -1432px;
+  width: 48px;
+  height: 44px;
+}

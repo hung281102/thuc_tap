@@ -1,0 +1,245 @@
+.payment-detail-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-layout {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #eceef1;
+  gap: 24px;
+}
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.header-icon > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -648px -145px;
+  width: 24px;
+  height: 23px;
+}
+.header-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.payment-type {
+  margin-right: auto;
+}
+.header-block-button {
+  width: 220px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.guide-tour {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.guide-tour-icon > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -983px -145px;
+  width: 24px;
+  height: 22px;
+}
+.config-layout > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -1378px -89px;
+  width: 20px;
+  height: 22px;
+}
+.help-detail > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -89px -145px;
+  width: 22px;
+  height: 22px;
+}
+.close-btn > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -147px -147px;
+  width: 18px;
+  height: 18px;
+}
+
+.body-layout {
+  padding: 8px 20px 12px;
+  background-color: #eceef1;
+  /* height: 250px; */
+}
+.main-inf {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.w-3-4 {
+  display: grid;
+  /* gap: 10px; */
+  grid-template-columns: 4fr 1fr;
+}
+
+.main-inf_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+.main-inf_row.full {
+  grid-template-columns: 1fr;
+}
+
+.w-1-5 {
+  padding-left: 16px;
+  border-left: 1px solid #ccc;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.w-4-5 {
+  padding-right: 16px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.w-1-4 {
+  text-align: end;
+}
+.w-1-4 h2 {
+  font-size: 35 px;
+  font-weight: 700;
+}
+.sub-inf {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.payment-detail-down {
+  padding: 0 20px;
+  background-color: #fff;
+}
+.payment-detail-down_header {
+  height: 34px;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+/* table */
+.table_header,
+.table_row,
+.table_footer {
+  display: flex;
+  height: 28px;
+}
+
+.column_footer.text-right {
+  text-align: end;
+}
+.column_header {
+  background-color: #e5e8ec;
+}
+.column_footer {
+  padding: 0 10px;
+}
+.column_header:first-child,
+.column_header:last-child {
+  background-color: #e5e8ec;
+}
+.column_body {
+  background-color: #fff;
+}
+.column_body:last-child {
+  flex: none;
+}
+.action_table {
+  margin-top: 10px;
+  gap: 20px;
+  display: flex;
+}
+.sub-btn {
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  border-color: #777;
+  transition: all 0.2s;
+}
+.sub-btn:hover {
+  background-color: #e2e2e2;
+}
+.table_footer {
+  height: 24px;
+  background-color: #e8eaef;
+}
+.icon-delete {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -464px -313px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.payment-detail_footer {
+  height: 44px;
+  width: 100%;
+  background-color: #38393d;
+  /* margin-top: auto; */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-handle-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.special-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-color: transparent;
+  cursor: text;
+  width: 90%;
+}
+.special-input.text-right {
+  text-align: right;
+}
+.special-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* 
+ */
+
+.table_body .table_row {
+  height: 32px;
+}
+
+.column_body {
+  height: 32px;
+}
+
+.table_body.disabled .column_body,
+.table_body.disabled .column_body .special-input {
+  background-color: #eff0f2;
+}

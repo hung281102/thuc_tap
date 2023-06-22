@@ -1,0 +1,204 @@
+.container-content-header {
+  height: 61px;
+}
+.container-table-data_header {
+  height: 44px;
+
+  padding: 0 12px;
+}
+.container-table-data_body {
+  height: calc(100% - 85px);
+}
+
+.pagination {
+  position: sticky;
+  bottom: -1px;
+  left: 0;
+  padding: 0 16px;
+  width: 100%;
+  height: 41px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+}
+.pagination span {
+  font-size: 14px;
+}
+
+.input-group {
+  height: 26px;
+  width: 250px;
+}
+.input {
+  width: 100%;
+  height: 100%;
+  padding: 0 12px 0 10px;
+  border-radius: 2px;
+  border: 1px solid #babec5;
+}
+input::placeholder {
+  color: #999999;
+  font-size: 13px;
+  font-style: italic;
+}
+.search {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  transform: translateY(-50%);
+  right: 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+}
+.search-icon {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -992px -360px;
+
+  width: 16px;
+  height: 16px;
+}
+
+/* table */
+.table-account {
+  width: 100%;
+  font-family: M-roboto;
+  border-spacing: 0;
+  text-align: left;
+  overflow-x: scroll;
+}
+thead tr {
+  z-index: 100;
+}
+tbody tr {
+  z-index: 10;
+}
+.table-account tr,
+.table-account td {
+  max-height: 30px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.table-account th {
+  max-height: 28px !important;
+
+  resize: vertical;
+}
+.table-account td {
+  resize: vertical;
+}
+.table-account td:first-child {
+  padding: 0 10px;
+}
+.paging-block-right {
+  display: flex;
+  gap: 50px;
+}
+
+.name-column {
+  height: 28px;
+  line-height: 36px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+thead tr th {
+  background-color: #e5e8ec;
+  border-right: 1px solid #c7c7c7;
+}
+table tr:hover td {
+  background-color: #f2f9ff;
+  cursor: pointer;
+}
+.state {
+}
+.m-table-cell {
+  font-size: 13px;
+  font-family: M-roboto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.edit-select-icon {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -896px -359px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  cursor: pointer;
+}
+.column-first {
+  display: flex;
+  gap: 10px;
+}
+.show-more {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -608px -312px;
+  width: 15px;
+  height: 15px;
+}
+.show-more.click {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -560px -312px;
+}
+.hide-more {
+  width: 15px;
+  height: 15px;
+}
+.block {
+  width: 15px;
+  height: 15px;
+}
+.text-bold td:not(:last-child) {
+  font-weight: 600;
+}
+
+/* option list */
+.option-list {
+  background-color: #fff;
+  border: 1px solid #babec5;
+  width: max-content;
+  position: absolute;
+  z-index: 103;
+}
+.option-item {
+  min-width: 120px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  padding: 0 10px;
+  height: 28px;
+}
+.option-item:hover {
+  background-color: #eceef1;
+  color: #93be95;
+}
+.edit-option {
+  padding: 6px 1px 6px 16px !important;
+  color: #0075c0;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.clicked > td {
+  background-color: #e4f0fa !important;
+}
+
+/*  */
+
+.table-account thead tr th:last-child {
+  position: sticky;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #e4f0fa;
+}
+.table-account tbody tr td:last-child {
+  position: sticky;
+  right: 0;
+  border-left: 1px solid #e4f0fa;
+}

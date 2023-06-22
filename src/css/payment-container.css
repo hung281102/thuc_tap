@@ -1,0 +1,328 @@
+.payment-overview {
+  height: 60px;
+  background-color: #fff;
+  /* width: 100%; */
+  margin: 0 20px;
+  border-bottom: 1px solid #e5e8ec solid #d3d4d4;
+}
+.layout-master-detail {
+  margin: 0 20px;
+  /* max-height: calc(100% - 41px); */
+  height: calc(100vh - 89px);
+  /* overflow: hidden; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.layout-master-action {
+  height: 44px;
+  background-color: #fff;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.layout-master-action_right,
+.layout-master-action_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-down {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-down > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -259px -147px;
+  width: 18px;
+  height: 18px;
+}
+.btn-reload,
+.btn-export,
+.btn-setting {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-reload > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -1098px -90px;
+  width: 20px;
+  height: 21px;
+  opacity: 0.5;
+}
+.btn-export > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -1265px -90px;
+  width: 23px;
+  height: 20px;
+  opacity: 0.5;
+}
+.btn-setting > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -1378px -89px;
+  width: 20px;
+  height: 22px;
+  opacity: 0.5;
+}
+
+/* table master */
+.layout-master {
+  overflow-y: auto;
+}
+.layout-detail {
+  overflow-y: auto;
+}
+.layout-master-table,
+.layout-detail-table {
+  /* overflow-x: auto; */
+  position: relative;
+}
+.layout-detail-table_header,
+.layout-master-table_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+}
+.layout-detail-table {
+  position: relative;
+  max-height: calc(100% - 81px);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.layout-detail-table_header,
+.layout-master-table_header,
+.row-body {
+  height: 28px;
+  background-color: #e5e8ec;
+  display: flex;
+  width: fit-content;
+}
+
+.column_header,
+.column_body {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-right: 1px dotted #d3d4d4;
+  border-bottom: 1px solid #d3d4d4;
+  z-index: 1;
+}
+.column_header:first-child,
+.column_body:first-child {
+  position: sticky;
+  background-color: #e5e8ec;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.column_body:first-child {
+  background-color: #fff;
+}
+
+.column_header:nth-child(9),
+.column_body:nth-child(9) {
+  border-right: transparent;
+}
+.column_header:last-child,
+.column_body:last-child {
+  background-color: #e5e8ec;
+  border-right: transparent;
+  border-left: 1px solid #d3d4d4;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+.column_body:last-child {
+  background-color: #fff;
+  flex: 1;
+}
+.column_header.text-left,
+.column_body.text-left {
+  justify-content: flex-start;
+}
+.column_header.text-right,
+.column_body.text-right {
+  justify-content: flex-end;
+}
+.column_header.text-center,
+.column_body.text-center {
+  justify-content: center;
+}
+.column_header .column-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+.column_body .column-name {
+  font-size: 13px;
+  font-weight: 400;
+}
+.column_header input[type="checkbox"],
+.column_body input[type="checkbox"] {
+  transform: scale(1.4);
+}
+
+.row-body {
+  height: 32px;
+  width: fit-content;
+  /* width: 100%; */
+  display: flex;
+}
+.column_body {
+  /* height: 30px; */
+  border-bottom: 1px solid #c7c7c7;
+  background-color: #fff;
+  z-index: 1;
+}
+.layout-master-table_footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 103;
+  height: 44px;
+  /* width: fit-content;
+  background: #999; */
+}
+
+.layout-detail_header {
+  height: 37px;
+  width: fit-content;
+  background-color: #eceef1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.layout-master-detail_resize {
+  height: 15px;
+  cursor: row-resize;
+  background-color: #eceef1;
+}
+.layout-detail-table_footer {
+  height: 44px;
+  background-color: #999;
+
+  /* width: fit-content; */
+}
+.layout-detail-table_body .column_body:last-child,
+.layout-detail-table_header .column_header:last-child {
+  position: unset;
+}
+.layout-detail-table_body {
+  z-index: 1000;
+}
+.row-body.last-row {
+  position: sticky;
+  bottom: 44px;
+  left: 0;
+  right: 0;
+  z-index: 102;
+  height: 24px;
+}
+.pagination-master-layout {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #fff;
+  z-index: 1000;
+}
+.sum-of-record {
+  font-size: 14px;
+  color: #111;
+}
+
+/* detail */
+.layout-detail_header {
+  width: 100%;
+  background-color: #eceef1;
+}
+.layout-detail-table_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
+}
+.btn-detail {
+  padding: 4px 16px;
+  background-color: #f2ebbf;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #e0e0e0;
+
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.layout-detail-table .row-body.last-row {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 102;
+  /* width: 100%; */
+}
+.row-body:hover .column_body {
+  cursor: default;
+  background-color: rgb(242, 249, 252);
+}
+.row-body.click .column_body {
+  background-color: #e5f3ff;
+}
+
+.row-body .column_body {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.layout-detail-table_body .row-body .column_body:last-child {
+  min-width: calc(100% - 750px);
+}
+.layout-detail-table_body .row-body .column_body:last-child {
+  border-left: none;
+}
+.layout-detail-table_header .column_header:last-child {
+  border-left: none;
+}
+
+.resize-block {
+  width: 55px;
+  height: 14px;
+  background-color: rgb(175, 172, 175);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.resize-block > div {
+  background: url("@/assets/imgs/Sprites.64af8f61.svg") no-repeat -564px -365px;
+  width: 8px;
+  height: 5px;
+}
+.resize-block.click > div {
+  transform: rotate(180deg);
+}
+.layout-master-detail .column_body .column-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
